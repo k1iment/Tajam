@@ -2527,7 +2527,7 @@ input[type='range'] {
     .team-background {
         height: 1160px;
         background-size: cover;
-        width: 101%;
+        width: 102%;
     }
 
     .team {
@@ -2634,7 +2634,7 @@ input[type='range'] {
     .project-pictures-container {
         grid-template-columns: repeat(4, minmax(170px, 269px));
         grid-template-rows: repeat(2, 250px);
-        width: 101%;
+        width: 102%;
     }
 
     .works-title {
@@ -2658,7 +2658,7 @@ input[type='range'] {
     .quoutes {
         height: 600px;
         background-size: cover;
-        width: 101%;
+        width: 102%;
     }
 
     .testimonial-content {
@@ -2803,7 +2803,7 @@ input[type='range'] {
     /*Footer*/
 
     .footer {
-        width: 101%;
+        width: 102%;
         background-size: cover;
     }
 
