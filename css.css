@@ -81,6 +81,14 @@ button {
     display: none;
 }
 
+.none-1 {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .wrapper {
     display: grid;
     max-width: 1600px;
@@ -510,7 +518,7 @@ button {
 .controls-background {
     background: linear-gradient(90deg, rgba(121, 118, 142, 0.5), rgba(240, 130, 130, 0.5));
     position: absolute;
-    width: 100%;
+    width: 101%;
     top: 497px;
     height: 53px;
     opacity: 1;
@@ -681,9 +689,8 @@ input[type='range'] {
   /*Our works*/
 
   .works {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 160px 400px 180px;
+      display: flex;
+      flex-direction: column;
   }
 
   .works-title-container {
@@ -733,6 +740,11 @@ input[type='range'] {
       width: 100%;
       height: 100%;
       display: block;
+      z-index: 1;
+  }
+
+  .first-container {
+      z-index: 5;
   }
 
   .picutre-1 {
@@ -802,6 +814,19 @@ input[type='range'] {
     width: 101%;
     margin-bottom: 60px;
     margin-top: 60px;
+    opacity: 1;
+    transform: translateX(0);
+    transition: .5s opacity ease-in-out;
+}
+
+.none-1 {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: translateX(-101%);
+    transition: .5s opacity ease-in-out;
 }
 
 .none {
@@ -994,10 +1019,50 @@ input[type='range'] {
 
 .zara {
     padding-top: 9px;
+    width: 162px;
+    height: 31px;
 }
 
 .calvin {
     padding-top: 10px;
+    width: 151px;
+    height: 34px;
+}
+
+.gucci {
+    padding-top: 24px;
+    width: 140px;
+    height: 21px;
+}
+
+.puma {
+    width: 114px;
+    height: 56px;
+}
+
+.barneys {
+    width: 154px;
+    height: 41px;
+}
+
+.levis {
+    width: 109px;
+    height: 53px;
+}
+
+.mango {
+    width: 138px;
+    height: 22px;
+}
+
+.nike {
+    width: 95px;
+    height: 34px;
+}
+
+.billabong {
+    width: 130px;
+    height: 70px;
 }
 
 /*Footer*/
@@ -1807,6 +1872,16 @@ input[type='range'] {
           background-color: #b6b6b6;
       }
 
+      .project-pictures:hover {
+        background-color: #8a8686;
+        transition: .3s background-color ease-in-out;
+    }
+
+    .project-pictures:focus {
+        background-color: #8a8686;
+        transition: .5s background-color ease-in-out;
+    }
+
       .picutre-2 {
         background-color: #acacac;
       }
@@ -1852,7 +1927,12 @@ input[type='range'] {
     }
 
     .work-btn-container {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #hide-btn {
+        margin-left: 20px;
     }
 
     .load {
@@ -1862,6 +1942,7 @@ input[type='range'] {
         padding-right: 26px;
         padding-top: 10px;
         padding-bottom: 10px;
+        z-index: 2;
     }
 
     .project-pictures-container {
@@ -1869,6 +1950,20 @@ input[type='range'] {
         grid-template-columns: repeat(6, minmax(170px, 269px));
         grid-template-rows: repeat(2, 200px);
         width: 101%;
+        opacity: 1;
+        transform: translateX(0);
+        transition: .3s transform ease-in-out;
+        transition: .5s opacity ease-in-out;
+    }
+
+    .none-1 {
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        transform: translateX(-101%);
+        transition: .3s opacity ease-in-out;
     }
 
     .none {
@@ -2093,6 +2188,8 @@ input[type='range'] {
 
     .logo {
         margin-bottom: 20px;
+        width: 128px;
+        height: 50px;
     }
 
     .footer-content {
@@ -2244,7 +2341,7 @@ input[type='range'] {
     }
 
     .nav-link {
-        font-size: 10px;
+        font-size: 17px;
         display: block;
     }
 
@@ -2260,6 +2357,7 @@ input[type='range'] {
         width: 300px;
         object-fit: cover;
         margin: 0;
+        height: 116px;
     }
 
     .news {
@@ -2610,9 +2708,7 @@ input[type='range'] {
     /*Works*/
 
     .works {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 160px 500px 180px;    
+        display: flex;   
     }
 
     .picutre-6 {
@@ -2635,6 +2731,8 @@ input[type='range'] {
         grid-template-columns: repeat(4, minmax(170px, 269px));
         grid-template-rows: repeat(2, 250px);
         width: 102%;
+        margin-bottom: 60px;
+        margin-top: 60px;
     }
 
     .works-title {
