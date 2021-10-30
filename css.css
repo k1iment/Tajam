@@ -1642,7 +1642,7 @@ input[type='range'] {
     .controls-background {
         background: linear-gradient(90deg, rgba(121, 118, 142, 0.5), rgba(240, 130, 130, 0.5));
         position: absolute;
-        width: 100%;
+        width: 101%;
         top: 497px;
         height: 53px;
         opacity: 1;
