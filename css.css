@@ -2384,6 +2384,8 @@ input[type='range'] {
     .logo {
         width: 84%;
         margin-left: 24px;
+        height: auto;
+        object-fit: cover;
     }
 
     .nav-link {
